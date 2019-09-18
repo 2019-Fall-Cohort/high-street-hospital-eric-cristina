@@ -1,0 +1,20 @@
+{
+  "name": "high-street-hospital-eric-cristina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Janitor.js",
+  "scripts": {
+    "test": "jest -- colors --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina/issues"
+  },
+  "homepage": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina#readme"
+}
