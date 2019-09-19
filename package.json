@@ -16,8 +16,12 @@
   "bugs": {
     "url": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina#readme",
   "devDependencies": {
     "jest": "^24.9.0"
   }
+=======
+  "homepage": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina#readme"
+>>>>>>> ef118c49a4606c7430f33761f3c6121a7b1d68b7
 }
