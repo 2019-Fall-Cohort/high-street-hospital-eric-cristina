@@ -1,12 +1,25 @@
-class Receptionist () {
-    isHospitalE5ployee (){
-        return this.employee;
-        
+class Receptionist  {
+
+    constructor() {
+        this.name = "NoName"
+        this.idNumber = 0;
+        this.onPhone = false;
     }
-    // constructor(id, firstName = "Maria" , lastName ="Perez") 
+    isOnPhone() {
+        return this.onPhone 
+
+    } 
+    answerPhone() {
+        return this.onPhone = true; 
+    }
+    hangUpPhone () {
+        return this.onPhone = false;
+    }
+
 }
+module.exports = Receptionist; 
 
-
+// constructor(id, firstName = "Maria" , lastName ="Perez") 
 // import { tsConstructorType } from "@babel/types"
 
 // const input = require('readline-sync');

@@ -2,7 +2,7 @@ class Janitor {
 
     constructor() {
 
-        this.namename = "Noname";      
+        this.name = "NoName";      
         this.idNumber = 0;       
         this.sweeping = false;
 
@@ -11,17 +11,17 @@ class Janitor {
 
     isSweeping() {
 
-        return this.sweeping
+        return this.sweeping;
     }
 
     startSweeping() {
 
-        this.sweeping = true;
+        return this.sweeping = true;
     }
 
     stopSweeping() {
 
-        this.sweeping = false;
+        return this.sweeping = false;
     }
 
 
@@ -36,6 +36,7 @@ constructor(){
 }
 
     drawBlood(){
+        return "Yummy, blood";
 
 
 
@@ -43,3 +44,5 @@ constructor(){
 
 }
 module.exports = Janitor;
+module.exports = VampireJanitor;
+

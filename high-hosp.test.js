@@ -1,11 +1,14 @@
-const Receptionist = require("./high-hosp")
+const Receptionist = require("./Receptionist")
+
 describe("Receptionist", () => {
-    describe("onPhone" , () => {
+    test("onPhone" , () => {
         const underTest = new Receptionist();
         const testPhone = "onPhone"
+
+    expect(underTest.onPhone).toEqual(false);
     }
 
-    ))
+    )
 }
 )
-module.exports; 
+ 
