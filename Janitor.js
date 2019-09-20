@@ -1,5 +1,3 @@
-// test push to branch
-
 class Janitor {
 
     constructor() {
@@ -29,22 +27,22 @@ class Janitor {
 
 }
 
-class VampireJanitor extends Janitor {
+// class VampireJanitor extends Janitor {
 
-constructor(){
+// constructor(){
 
-    super();
+//     super();
 
-}
+// }
 
-    drawBlood(){
-        return "Yummy, blood";
+//     drawBlood(){
+//         return "Yummy, blood";
 
 
 
-    }
+//     }
 
-}
+// }
 module.exports = Janitor;
-module.exports = VampireJanitor;
+// module.exports = VampireJanitor;
 
