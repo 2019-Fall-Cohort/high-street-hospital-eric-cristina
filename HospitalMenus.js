@@ -10,7 +10,7 @@ class HospitalMenus{
     
     selectMenu(selection){
         
-        console.log("selection "+ selection)
+     //   console.log("selection "+ selection)
         let whichMenu = ""
 
         switch(selection){
@@ -23,6 +23,11 @@ class HospitalMenus{
             case "2":
 
                 whichMenu = "patient";
+                break;
+
+            case "3":
+
+                whichMenu = "quit";
                 break;
 
             default:
@@ -50,6 +55,7 @@ class HospitalMenus{
                 console.log("1. List Employees");
                 console.log("2. Add New Employee");
                 console.log("3. Remove Employee");
+                console.log("4. Return to Main Menu");
                 console.log();
                 console.log();
 
@@ -67,6 +73,7 @@ class HospitalMenus{
                 console.log("2. Admit Patient");
                 console.log("3. Discharge Patient");
                 console.log("4. Draw Blood");
+                console.log("5. Return to Main Menu");
                 console.log();
                 console.log();
 
@@ -86,6 +93,7 @@ class HospitalMenus{
                 console.log();
                 console.log("1. Administrative Services");
                 console.log("2. Patient Services");
+                console.log("3. Exit Hospital");
                 console.log();
             
         }

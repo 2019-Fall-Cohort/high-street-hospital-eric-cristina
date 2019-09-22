@@ -18,32 +18,49 @@ class Hospital{
     const response = input.question("Press enter to proceed : ");
   }
 
+displayMainMenu(){
 
+  let myMenu = new HospitalMenus();
+
+  let itemChoice =  myMenu.chooseFromMenu("default");
+
+  let whichMenu = myMenu.selectMenu(itemChoice);
+
+  return whichMenu;
+
+}
   
-  getUserSelection(){
+  getUserSelection(whichMenu){
 
     const myMenu = new HospitalMenus();
 
-    let itemChoice =  myMenu.chooseFromMenu("default");
+    // let itemChoice =  myMenu.chooseFromMenu("default");
 
-    let whichMenu = myMenu.selectMenu(itemChoice);
+    // let whichMenu = myMenu.selectMenu(itemChoice);
 
-    itemChoice =  myMenu.chooseFromMenu(whichMenu);
+    let itemChoice =  myMenu.chooseFromMenu(whichMenu);
+
+    let stillWorking = true;
+
 
     switch(whichMenu){
 
       case "admin":
 
         switch(itemChoice){
+        
+            case "1": console.log("1. List Employees");
+            break;
 
-          case "1": console.log("1. List Employees");
-          break;
+            case "2": console.log("2. Add New Employee");
+            break;
 
-          case "2": console.log("2. Add New Employee");
-          break;
+            case "3": console.log("3. Remove Employee");
+            break;
 
-          case "3": console.log("3. Remove Employee");
-          break;
+            case "4": console.log("4. Return to Main Menu");
+            stillWorking = false;
+            break;
 
         }
 
@@ -63,13 +80,20 @@ class Hospital{
 
           case "4": console.log("4. Draw Blood");
           break;
+
+          case "5": console.log("5. Return to Main Menu");
+          stillWorking = false;
+          break;
         }
       break;
 
       default:
+
+        stillWorking = false;
      
     }
-
+  //  console.log("stillWorking = " + stillWorking);
+    return stillWorking;
   }
 
 }
