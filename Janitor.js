@@ -1,11 +1,8 @@
-class Janitor {
+class Janitor extends NotMedical{
 
     constructor() {
-
-        this.name = "NoName";      
-        this.idNumber = 0;       
+        super('NoName', 1, 40000);       
         this.sweeping = false;
-
     }
 
 
@@ -26,23 +23,5 @@ class Janitor {
 
 
 }
-
-class VampireJanitor extends Janitor {
-
-constructor(){
-
-    super();
-
-}
-
-    drawBlood(){
-        return "Yummy, blood";
-
-
-
-    }
-
-}
 module.exports = Janitor;
-module.exports = VampireJanitor;
 
