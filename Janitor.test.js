@@ -2,7 +2,7 @@ const Janitor = require("./Janitor");
 const VampireJanitor = require("./VampireJanitor");
 
 describe ("Janitor",() => {
-    test(" ", ()=> {
+    test("", ()=> {
 
        const  testJanitor = new Janitor();
 
