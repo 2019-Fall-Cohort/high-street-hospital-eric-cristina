@@ -1,6 +1,6 @@
 class Janitor {
 
-    constructor() {
+    constructor(name,idNumber,sweeping) {
 
         this.name = "NoName";      
         this.idNumber = 0;       
@@ -27,22 +27,6 @@ class Janitor {
 
 }
 
-// class VampireJanitor extends Janitor {
-
-// constructor(){
-
-//     super();
-
-// }
-
-//     drawBlood(){
-//         return "Yummy, blood";
-
-
-
-//     }
-
-// }
 module.exports = Janitor;
-// module.exports = VampireJanitor;
+
 

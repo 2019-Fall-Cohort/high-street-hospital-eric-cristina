@@ -6,7 +6,7 @@ const Patient = require("./Patient");
 class Hospital{
 
     constructor(){
-      this.HospitalWard;
+      this.newHospitalWard = new HospitalWard;
     }
 
   welcome(){
@@ -41,7 +41,7 @@ displayMainMenu(){
     let stillWorking = true;
 
 
-    let newHospitalWard = new HospitalWard();
+    // let newHospitalWard = new HospitalWard();
     let response = "";
 
 
@@ -72,38 +72,41 @@ displayMainMenu(){
       case "patient":
 
         switch(itemChoice){
-          case "1": //console.log("1. List Patients");
-            //  const newHospitalWard = new HospitalWard();
-              const patientList = this.newHospitalWard.Patients;
-              console.log(patientList.length);
-              // for(let i=0;i<patientList.length+1;i++){
-              //   console.log(patientList[i]);
-              // }
+          case "1": // 1. List Patients
+            
+             for(let i=0;i<this.newHospitalWard.Patients.length;i++){                      
+             console.log(this.newHospitalWard.Patients[i]);
+            }
 
               this.response = input.question("Press enter to proceed : ");
           break;
 
-          case "2": //console.log("2. Admit Patient");
+          case "2": // 2. Admit Patient 
 
-              // newHospitalWard.admitPatient("fred","123",5,9);
+              let name = input.question("Enter Patient's Name : ");
+              let id = input.question("Enter Patient's ID : ");
+              let healthLevel = input.question("Enter Patient's Health Level : ");
+              let bloodLevel = input.question("Enter Patient's Blood Level : ");
 
-              // console.log(newHospitalWard.Patients[0]);
+              this.newHospitalWard.admitPatient(name,id,healthLevel,bloodLevel);
 
-              HospitalWard.admitPatient("fred","123",5,9);
-
-              console.log(HospitalWard.Patients[0]);
+              console.log(this.newHospitalWard.Patients[this.newHospitalWard.Patients.length-1]);
 
               this.response = input.question("Press enter to proceed : ");
 
           break;
 
-          case "3": console.log("3. Discharge Patient");
+          case "3": // 3. Discharge Patient 
+
+          this.id = input.question("Enter Discharging Patient's ID : ");
+          this.newHospitalWard.dischargePatient(this.id);
+
           break;
 
-          case "4": console.log("4. Draw Blood");
+          case "4": // 4. Draw Blood
           break;
 
-          case "5": console.log("5. Return to Main Menu");
+          case "5": // 5. Return to Main Menu
               stillWorking = false;
           break;
         }

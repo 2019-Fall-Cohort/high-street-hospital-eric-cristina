@@ -2,9 +2,9 @@ const Janitor = require("./Janitor");
 
 class VampireJanitor extends Janitor {
 
-    constructor(){
+    constructor(name,idNumber,sweeping){
     
-        super();
+        super(name,idNumber,sweeping);
     
     }
     
