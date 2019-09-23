@@ -6,8 +6,8 @@ class Janitor extends NotMedical {
         super(_name, _id, _salary);
         this.name = "NoName";      
         this.idNumber = 0;       
-        this.sweeping = false;
 
+        this.sweeping = false;
     }
 
 
@@ -29,6 +29,8 @@ class Janitor extends NotMedical {
 
 }
 
+
 module.exports = Janitor;
+
 
 

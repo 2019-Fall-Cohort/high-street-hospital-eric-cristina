@@ -4,5 +4,8 @@ class Employee {
         this.id = -1;
         this.salary = -1;
     }
+
 }
 module.exports = Employee;
+
+

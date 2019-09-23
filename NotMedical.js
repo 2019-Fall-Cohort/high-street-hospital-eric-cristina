@@ -1,3 +1,4 @@
+
 const Employee = require("./Employee");
 
 class NotMedical extends Employee {
@@ -12,3 +13,4 @@ constructor(_name, _id, _salary) {
 }
 }
 module.exports = NotMedical;
+

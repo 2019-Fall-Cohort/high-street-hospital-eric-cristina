@@ -1,3 +1,4 @@
+
 const Medical = require("./Medical");
 
 class Doctor extends Medical {
@@ -23,11 +24,11 @@ class Doctor extends Medical {
     }
     notCaringPatient () {
         return this.notCaring = false;
+
     }
 
 
 
 }
-alert(Doctor instanceof Medical)
-module.exports = Doctor;
 
+module.exports = Doctor;

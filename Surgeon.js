@@ -1,13 +1,18 @@
-//const Medical = require("./Medical");
+
+
+
+
 
 
 const Doctor = require("./Doctor");
 
 class Surgeon extends Doctor{
 
+
     constructor(_name, _id, _salary){
         
         super(_name, _id, _salary);
+
         this.operating = false;   
         
         
@@ -16,7 +21,9 @@ class Surgeon extends Doctor{
 
 isOperating(){
 
+
 return this.operating;
+
 
 }
 
@@ -33,4 +40,6 @@ finishOperating(){
 
 }
 
+
 module.exports = Surgeon;
+
