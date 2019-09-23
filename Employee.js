@@ -5,3 +5,4 @@ class Employee {
         this.salary = -1;
     }
 }
+module.exports = Employee;

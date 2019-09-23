@@ -5,3 +5,4 @@ constructor (_name, _id, _salary,) {
     this.careForPatient = true;
 } 
 }
+module.exports = Medical;

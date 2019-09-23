@@ -5,8 +5,8 @@ describe("Doctor" , () => {
     test("" , () => {
      const testDoctor = new Doctor();
 
-     expect(testDoctor.drawBlood()).toEqual(false);
-     expect(testDoctor.careForPatient()).toEqual(false);
+    expect(testDoctor.drawBlood()).toEqual(false);
+    expect(testDoctor.careForPatient()).toEqual(false);
     })
 
 })
