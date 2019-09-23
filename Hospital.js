@@ -41,7 +41,6 @@ displayMainMenu(){
     let stillWorking = true;
 
 
-    // let newHospitalWard = new HospitalWard();
     let response = "";
 
 
@@ -76,7 +75,7 @@ displayMainMenu(){
             
              for(let i=0;i<this.newHospitalWard.Patients.length;i++){                      
              console.log(this.newHospitalWard.Patients[i]);
-            }
+             }
 
               this.response = input.question("Press enter to proceed : ");
           break;
@@ -98,8 +97,8 @@ displayMainMenu(){
 
           case "3": // 3. Discharge Patient 
 
-          this.id = input.question("Enter Discharging Patient's ID : ");
-          this.newHospitalWard.dischargePatient(this.id);
+              this.id = input.question("Enter Discharging Patient's ID : ");
+              this.newHospitalWard.dischargePatient(this.id);
 
           break;
 
