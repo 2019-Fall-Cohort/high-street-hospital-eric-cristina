@@ -9,10 +9,7 @@ class VampireJanitor extends Janitor {
     }
     
         drawBlood(){
-            return "Yummy, blood";
-    
-    
-    
+            return "Yummy, blood";   
         }
     
     }
