@@ -2,7 +2,7 @@
   "name": "high-street-hospital-eric-cristina",
   "version": "1.0.0",
   "description": "",
-  "main": "Janitor.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --colors --watchAll"
   },
@@ -17,6 +17,9 @@
     "url": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina/issues"
   },
   "homepage": "https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
   "devDependencies": {
     "jest": "^24.9.0"
   }

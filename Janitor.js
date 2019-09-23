@@ -1,7 +1,12 @@
-class Janitor extends NotMedical{
+const NotMedical = require("./NotMedical");
 
-    constructor() {
-        super('NoName', 1, 40000);       
+class Janitor extends NotMedical {
+
+    constructor(name,idNumber,sweeping) {
+        super(_name, _id, _salary);
+        this.name = "NoName";      
+        this.idNumber = 0;       
+
         this.sweeping = false;
     }
 
@@ -23,5 +28,9 @@ class Janitor extends NotMedical{
 
 
 }
+
+
 module.exports = Janitor;
+
+
 

@@ -1,8 +1,8 @@
 const Janitor = require("./Janitor");
-const VampireJanitor = require("./Janitor");
+const VampireJanitor = require("./VampireJanitor");
 
 describe ("Janitor",() => {
-    test(" ", ()=> {
+    test("", ()=> {
 
        const  testJanitor = new Janitor();
 
@@ -22,3 +22,4 @@ describe ("VampireJanitor",() => {
      expect(testVampireJanitor.drawBlood()).toEqual("Yummy, blood");  
     })
 })
+ 
