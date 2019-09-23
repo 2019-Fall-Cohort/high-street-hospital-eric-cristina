@@ -1,10 +1,12 @@
 const input = require("readline-sync");
 const HospitalMenus = require("./HospitalMenus");
+const HospitalWard = require("./HospitalWard");
+const Patient = require("./Patient");
 
 class Hospital{
 
     constructor(){
-        
+      this.HospitalWard;
     }
 
   welcome(){
@@ -34,13 +36,13 @@ displayMainMenu(){
 
     const myMenu = new HospitalMenus();
 
-    // let itemChoice =  myMenu.chooseFromMenu("default");
-
-    // let whichMenu = myMenu.selectMenu(itemChoice);
-
     let itemChoice =  myMenu.chooseFromMenu(whichMenu);
 
     let stillWorking = true;
+
+
+    let newHospitalWard = new HospitalWard();
+    let response = "";
 
 
     switch(whichMenu){
@@ -68,11 +70,31 @@ displayMainMenu(){
 
 
       case "patient":
+
         switch(itemChoice){
-          case "1": console.log("1. List Patients");
+          case "1": //console.log("1. List Patients");
+            //  const newHospitalWard = new HospitalWard();
+              const patientList = this.newHospitalWard.Patients;
+              console.log(patientList.length);
+              // for(let i=0;i<patientList.length+1;i++){
+              //   console.log(patientList[i]);
+              // }
+
+              this.response = input.question("Press enter to proceed : ");
           break;
 
-          case "2": console.log("2. Admit Patient");
+          case "2": //console.log("2. Admit Patient");
+
+              // newHospitalWard.admitPatient("fred","123",5,9);
+
+              // console.log(newHospitalWard.Patients[0]);
+
+              HospitalWard.admitPatient("fred","123",5,9);
+
+              console.log(HospitalWard.Patients[0]);
+
+              this.response = input.question("Press enter to proceed : ");
+
           break;
 
           case "3": console.log("3. Discharge Patient");
@@ -82,7 +104,7 @@ displayMainMenu(){
           break;
 
           case "5": console.log("5. Return to Main Menu");
-          stillWorking = false;
+              stillWorking = false;
           break;
         }
       break;
@@ -92,7 +114,7 @@ displayMainMenu(){
         stillWorking = false;
      
     }
-  //  console.log("stillWorking = " + stillWorking);
+  
     return stillWorking;
   }
 

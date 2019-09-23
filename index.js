@@ -1,12 +1,14 @@
 const input = require("readline-sync");
 const Hospital = require("./Hospital");
-//const HospitalMenus = require("./HospitalMenus");
+// const HospitalWard = require("./HospitalWard");
 
 const myHospital = new Hospital;
 
 myHospital.welcome();
 
 //const myMenu = new HospitalMenus();
+
+
 let quit = false;
 
 while (!quit){

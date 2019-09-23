@@ -36,8 +36,6 @@ describe("HospitalWard", () =>{
             newHospitalWard.admitPatient("fred","P001",7,12);
             newHospitalWard.admitPatient("ethel","P002",6,11);
             newHospitalWard.admitPatient("lucy","P003",3,7);
-        
-            newHospitalWard.admitPatient("ethel","P002",6,11);
 
             const testPatient = newHospitalWard.Patients[0];
 
