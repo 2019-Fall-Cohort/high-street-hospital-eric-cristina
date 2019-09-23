@@ -1,7 +1,9 @@
-class Janitor {
+const NotMedical = require("./NotMedical");
 
-    constructor() {
+class Janitor extends NotMedical {
 
+    constructor(_name, _id, _salary) {
+        super(_name, _id, _salary);
         this.name = "NoName";      
         this.idNumber = 0;       
         this.sweeping = false;

@@ -1,7 +1,9 @@
-class Doctor {
+const Medical = require("./Medical");
 
-    constructor(){
+class Doctor extends Medical {
 
+    constructor(_name, _id, _salary){
+        super(_name, _id, _salary);
         this.name = "NoName";      
         this.idNumber = 0; 
 

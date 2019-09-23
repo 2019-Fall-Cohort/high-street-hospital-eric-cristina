@@ -1,12 +1,13 @@
+//const Medical = require("./Medical");
 
 
 const Doctor = require("./Doctor");
 
 class Surgeon extends Doctor{
 
-    constructor(){
+    constructor(_name, _id, _salary){
         
-        super();
+        super(_name, _id, _salary);
         this.operating = false;   
         
         
