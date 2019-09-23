@@ -2,7 +2,7 @@ const NotMedical = require("./NotMedical");
 
 class Janitor extends NotMedical {
 
-    constructor(_name, _id, _salary) {
+    constructor(name,idNumber,sweeping) {
         super(_name, _id, _salary);
         this.name = "NoName";      
         this.idNumber = 0;       
@@ -29,22 +29,6 @@ class Janitor extends NotMedical {
 
 }
 
-// class VampireJanitor extends Janitor {
-
-// constructor(){
-
-//     super();
-
-// }
-
-//     drawBlood(){
-//         return "Yummy, blood";
-
-
-
-//     }
-
-// }
 module.exports = Janitor;
-// module.exports = VampireJanitor;
+
 

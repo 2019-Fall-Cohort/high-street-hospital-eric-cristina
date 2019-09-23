@@ -10,7 +10,6 @@ class HospitalMenus{
     
     selectMenu(selection){
         
-     //   console.log("selection "+ selection)
         let whichMenu = ""
 
         switch(selection){

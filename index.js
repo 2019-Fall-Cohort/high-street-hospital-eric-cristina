@@ -1,12 +1,11 @@
-// const input = require("readline-sync");
+const input = require("readline-sync");
 const Hospital = require("./Hospital");
-//const HospitalMenus = require("./HospitalMenus");
 
 const myHospital = new Hospital;
 
 myHospital.welcome();
 
-//const myMenu = new HospitalMenus();
+
 let quit = false;
 
 while (!quit){
@@ -22,8 +21,6 @@ while (!quit){
 
             
             stillWorking = myHospital.getUserSelection(whichMenu);
-            //console.log("index stillWorking = " + stillWorking);
-
         }
      }else{
 
